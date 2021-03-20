@@ -12,8 +12,8 @@ vtop=driver.find_element_by_class_name("btn-primary")
 vtop.click()
 
 driver.implicitly_wait(5)
-user_input=driver.find_element_by_name("uname")
-pass_input=driver.find_element_by_name("passwd")
+user_input=driver.find_element_by_name("uname")#enter your username
+pass_input=driver.find_element_by_name("passwd")#enter your password
 user_input.send_keys("20BAI10097")
 pass_input.send_keys("Pranav@2002")
 
@@ -27,7 +27,7 @@ print("signed in")
 driver.implicitly_wait(5)
 select=driver.find_element_by_xpath('.//span[@class = "fa fa-graduation-cap"]')
 select.click()
-select=driver.find_element_by_link_text('Time Table')
+select=driver.find_element_by_link_text('Time Table')#replace timetable with the thing you need
 select.click()
 
-#attendance
+
