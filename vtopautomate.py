@@ -12,10 +12,10 @@ vtop=driver.find_element_by_class_name("btn-primary")
 vtop.click()
 
 driver.implicitly_wait(5)
-user_input=driver.find_element_by_name("uname")#enter your username
-pass_input=driver.find_element_by_name("passwd")#enter your password
-user_input.send_keys("20BAI10097")
-pass_input.send_keys("Pranav@2002")
+user_input=driver.find_element_by_name("uname")
+pass_input=driver.find_element_by_name("passwd")
+user_input.send_keys("username")#enter username
+pass_input.send_keys("pass")#enter password
 
 bt_submit = driver.find_element_by_id("captcha")
 
